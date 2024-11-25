@@ -1,18 +1,18 @@
 body{
-    cursor: url("../html/Union.svg"), auto;
+    cursor: url("./Union.svg"), auto;
     
 }
 @font-face {
     font-family:'GeologicaCursive-Bold';
-    src: url("../html/fonts/GeologicaCursive-Bold.woff2") format("woff2")
+    src: url("./fonts/GeologicaCursive-Bold.woff2") format("woff2")
 }
 @font-face {
     font-family:'GeologicaCursive-Regular';
-    src: url("../html/fonts/GeologicaCursive-Regular.woff2") format("woff2")
+    src: url("./fonts/GeologicaCursive-Regular.woff2") format("woff2")
 }
 @font-face {
     font-family:'GeologicaCursive-Black';
-    src: url("../html/fonts/GeologicaCursive-Black.woff2") format("woff2")
+    src: url("./fonts/GeologicaCursive-Black.woff2") format("woff2")
 }
 
 
