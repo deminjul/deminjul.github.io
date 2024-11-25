@@ -1,0 +1,5 @@
+@font-face {
+    font-family:"geor" ;
+    src: url("./geologica-medium-webfont")format("woff2"),
+           url("./geologica-medium-webfont")format("woff");
+}

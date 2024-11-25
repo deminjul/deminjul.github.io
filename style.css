@@ -1,0 +1,941 @@
+body{
+    cursor: url("../html/Union.svg"), auto;
+    
+}
+@font-face {
+    font-family:'GeologicaCursive-Bold';
+    src: url("../html/fonts/GeologicaCursive-Bold.woff2") format("woff2")
+}
+@font-face {
+    font-family:'GeologicaCursive-Regular';
+    src: url("../html/fonts/GeologicaCursive-Regular.woff2") format("woff2")
+}
+@font-face {
+    font-family:'GeologicaCursive-Black';
+    src: url("../html/fonts/GeologicaCursive-Black.woff2") format("woff2")
+}
+
+
+.header_elements{
+    display: flex;
+    justify-content: space-evenly;
+
+    opacity: 1;
+    font-family: "Geologica" 
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 2000;width: 100%; 
+    padding: 5px;
+    margin-top: 0%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); /* Размытие заднего фона */
+    box-shadow: 0px 0px 15px rgba(164, 164, 165, 0.4);
+    
+}
+.span_elements span{
+    color:  #2051ff;
+    font-size: 18px;
+    font-family: GeologicaCursive-Regular;
+    letter-spacing: -0.7px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;     /* Перенос элементов, если они не помещаются в одну строку */
+    margin: 20px;         /* Отступы вокруг строки изображений */
+    flex-wrap: wrap; 
+}
+
+.image-row img {
+    max-width: 100%;      /* Ограничение ширины изображений */
+    height: auto;         /* Сохранение пропорций */
+    margin: 10px;        /* Отступы между изображениями */
+}
+
+/*.flex-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.btn{
+    margin-left: 200px;
+    margin-top: 128px;
+    background-color: #2051FF;
+    border: 0;
+    color:aliceblue;
+    width: 140px;
+    padding: 8px;
+    font-family: "Geologica" ;
+    border-radius: 15px 
+}
+h1{
+    margin: 270px 0 20px 0;
+    margin-left: 438px;
+    margin-bottom: 20px;
+    font-size: 93px;
+    color:  #2051ff;
+    font-family: "Geologica";
+}
+.image{
+    max-width: 100%;
+    margin-left: 129px;
+    height: auto;
+}
+h2{
+    margin-top: -85px;
+    margin-left: 420px;
+    font-size: 93px;
+    font-family: "Geologica";
+    color:  #2051ff;
+}
+.text-container {
+    text-align: center;          
+    margin-top: 10px;     
+
+    font-family: "Geologica";    
+}
+.text {
+    margin-top: 180px; 
+    margin-left: -300px;                  
+    font-size: 20px;   
+    color:  #2051ff;    
+    font-family: "Geologica";
+}     
+
+h4{
+   margin-top: 119px;
+   margin-left: 129px;
+   font-size: 93px;
+   color:  #2051ff;
+   font-family: "Geologica";
+}*/
+
+.text_info0 {
+    font-size: 20px;
+    color:  #2051ff;
+    font-family: GeologicaCursive-Regular;
+    letter-spacing: -0.7px;   
+    white-space: pre-line;
+}
+.flex-container11{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8.5%;;
+}
+
+h1{
+   font-size: 93px;
+   color:  #2051ff;
+   font-family: GeologicaCursive-Black;
+   letter-spacing: -4px;
+   font-weight: 700;
+   margin-left: 31%;
+   margin-top: 13%;
+   margin-bottom: 0%;
+   font-weight: 700;
+}
+
+
+
+.image{
+    height: 10px;
+}
+
+.flex-container12{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 2vw;
+    
+}
+
+
+.flex-container13{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 26%;
+    
+}
+
+.btn{
+    background-color: #2051FF;
+    border: 0;
+    color:aliceblue;
+    width: 140px;
+    font-size: 14px;
+    padding: 6px;
+    margin-left: 30%;
+    font-family: GeologicaCursive-Regular;
+    border-radius: 100px;
+    letter-spacing: -0.7px;
+}
+
+h2{
+    font-size: 93px;
+    color:  #2051ff;
+    font-family: GeologicaCursive-Black;
+    letter-spacing: -4px;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    font-weight: 1300;
+}
+
+h4{
+    margin-top: 119px;
+    margin-left:  8.5%;
+    font-size: 93px;
+    color:  #2051ff;
+    font-family: GeologicaCursive-Black;
+    letter-spacing: -4px;
+    font-weight: 700;
+}
+
+.flex-container1{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0%;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;     /* Перенос элементов, если они не помещаются в одну строку */     
+    margin-left: 129px;   /* Отступы вокруг строки изображений */
+    flex-wrap: wrap; 
+    margin-top: 0%;
+    margin-bottom: -1%;
+}
+
+.image-row img {
+    max-width: 100%;      /* Ограничение ширины изображений */
+    height: auto;         /* Сохранение пропорций */
+    margin: 0px;         /* Отступы между изображениями */
+}
+
+h5{
+    margin-left: 920px;
+    font-size: 30px;
+    font-size: 93px;
+    color:  #2051ff;
+    font-family: GeologicaCursive-Black;
+    letter-spacing: -4px;
+    font-weight: 700;
+   
+}
+
+.text-container1{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 920px;
+    font-family: "Geologica";
+}
+
+.text1{
+   font-size: 20px;
+   color:  #2051ff;
+   font-family: GeologicaCursive-Regular;
+   white-space: pre-line;
+   letter-spacing: -0.7px;
+}
+
+.text2{
+   margin-left: 100px;
+   font-size: 20px;
+   color:  #2051ff;
+   font-family: GeologicaCursive-Regular;
+   white-space: pre-line;
+   letter-spacing: -0.7px;
+}
+
+.text-container1_1 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 920px;
+}
+.text1_1{
+   font-size: 20px;
+   color:  #2051ff;
+   font-family: GeologicaCursive-Regular;
+   white-space: pre-line;
+   letter-spacing: -0.7px;
+}
+
+.text2_2{
+   margin-left: 100px;
+   font-size: 20px;
+   color:  #2051ff;
+   font-family: GeologicaCursive-Regular;
+   white-space: pre-line;
+   letter-spacing: -0.7px;
+}
+
+
+.second_elements{
+    display: flex;
+    justify-content: center;
+    gap: 13.3%;
+    opacity: 1;
+    margin-top: 20px;
+    font-family: GeologicaCursive-Regular;
+}
+
+.span_elements1{
+display: flex;
+justify-content: center;
+gap: 238px;
+opacity: 1;
+font-family: GeologicaCursive-Regular;
+font-size: 30px;
+color:  #2051ff;
+white-space: pre-line;
+letter-spacing: -0.7px;
+}
+
+.education_container{
+    margin-left: 130px;
+    width: 300px;  /* Ширина контейнера */
+    height: 300px; /* Высота контейнера */
+    
+}
+
+.item{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 200px;  /* Ширина контейнера */
+    height: 200px; /* Высота контейнера */
+
+}
+
+.row {
+    display: flex; /* Использование Flexbox для расположения контейнеров в строку */
+    justify-content: center; /* Центрирование контейнеров по горизонтали */
+    max-width: calc(100% - 258px); /* Ограничиваем максимальную ширину с учетом отступов 129px с каждой стороны */
+    margin: 0 110px; /* Отступы слева и справа по 129px */
+    margin-top: 20px;
+   
+}
+
+.container {
+    width: 30%; /* Устанавливает ширину на 100% родительского элемента */
+    margin: 0 auto;
+    margin-right: 5px; /* Отступ справа для разделения контейнеров */
+    padding: 10px; /* Отступы внутри контейнера */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.center-container {
+     /* Отступы слева и справа по 129px для центрального контейнера */
+}
+
+.bold-text {
+    font-weight: 1000; /* Жирный текст */
+    font-size: 15px; /* Размер шрифта 16px для жирного текста */
+    font-family: GeologicaCursive-Regular;
+    color:  #2051ff;
+    white-space: pre-line;  
+}
+
+.normal-text {
+    font-size: 16px; /* Размер шрифта 18px для обычного текста */
+    margin-top: 30px; /* Отступ сверху для расстояния 10px */
+    color:  #2051ff;
+    font-family: GeologicaCursive-Regular;
+    white-space: pre-line; 
+    letter-spacing: -0.7px;
+}
+
+
+
+
+
+
+.flex-container4{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.image-row1{
+    display: flex;
+    margin-left: 0px;
+    gap: 30px;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 8.5%;
+    margin-top: 150px;
+    
+}
+
+.in1{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: GeologicaCursive-Regular;
+    color:  #2051ff;
+    text-decoration: underline;
+    letter-spacing: -0.7px;
+}
+.title2{
+    font-family: GeologicaCursive-Regular;
+    color:  #2051ff;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -0.7px;
+}
+
+.block{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.text_info{
+    display: flex;
+    flex-direction: column;
+   
+    font-family: GeologicaCursive-Regular;
+    color:  #2051ff;
+}
+.text_info1{
+    letter-spacing: -0.7px;
+    font-family: GeologicaCursive-Regular;
+    color:  #2051ff;
+    width: 250px; /* Установка ширины контейнера */
+    overflow-wrap: break-word; /* Автоматический перенос текста на новую строку */
+    word-wrap: break-word; /* Поддержка для старых браузеров */
+    hyphens: auto; /* Автоматическая перенос слов с тире, если поддерживается */
+    
+}
+.btn2_container{
+    margin-top:60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn2{
+    background-color: white;
+    border: 0,1px;
+    border-color:#2051FF;
+    width: 140px;
+    height: 30px;
+    white-space: 1px;
+    font-family: GeologicaCursive-Regular;
+    color: #2051FF;
+    font-size: 14px;
+    border-radius: 100px 
+
+}
+
+.flex-container4, .flex-container5 {
+    margin-top: 20px; /* Убедитесь, что отступ достаточно большой */
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    justify-content: center; /* Центрирование контейнеров по горизонтали */
+}
+
+.flex-container4 {
+    margin-bottom: 20px; /* Пространство между flex-container4 и flex-container5 */
+}
+
+.kvadrat1, .kvadrat2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.image-button {
+    position: absolute;
+    top: 80%;
+    left: 79%;
+    padding: 10%;
+    display: inline-block; /* Обеспечивает использование размеров кнопки */
+    width: 30px; /* Ширина кнопки */
+    height: 33px; /* Высота кнопки */
+    background-image: url('Vector 11.svg'); /* Путь к вашему изображению */
+    background-color: transparent;
+    background-size: cover; /* Масштабирует изображение по размеру кнопки */
+    background-position: center; /* Центрирует изображение в кнопке */
+    border: none; /* Убирает стандартные рамки кнопки */
+    cursor: pointer; /* Курсор указателя для кнопки */
+    padding: 0; /* Убираем внутренние отступы */
+    outline: none; /* Убираем обводку при фокусе (для кнопки) */
+}
+.image-button0{
+    position: fixed;
+    top: 93%;
+    left: 87%;
+    padding: 5px;
+    width: 35px; /* Ширина кнопки */
+    height: 35px;
+    z-index: 999;
+    display: inline-block;
+    border: none;
+    background-image: url('Vector\ 0.svg');
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); /* Размытие заднего фона */
+    border-radius: 10px 
+}
+.tx1 {
+    position: absolute;
+    top: 4%;
+    left: 7%;
+    color: #000000;
+    font-family: GeologicaCursive-Regular;
+    font-weight: 900;
+    letter-spacing: -0.8px;
+}
+
+
+.container_works{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 1.4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-container {
+    display: flex;
+    max-width: 66%;  /* Максимальная ширина для слайдера */
+    margin-top: 1%;
+    margin-left: 5%;
+     /*margin : auto;  /* Центрируем слайдер */
+    position: relative;  /* Для позиционирования кнопок */
+    overflow: hidden;  /* Скрывает изображения, выходящие за пределы контейнера */
+
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;  /* Плавный переход между изображениями */
+}
+
+.slide {
+    min-width: 100%;  /* Каждое изображение занимает 100% ширины контейнера */
+}
+
+
+.slide-image {
+    width: 100%;  /* Изображение растягивается на всю ширину слайда */
+    height: auto;  /* Автоматическая высота для сохранения пропорций */
+}
+
+
+
+
+
+
+.prev {
+    left: 10px;  /* Расположение кнопки "назад" */
+    position: absolute;  /* Позиционируем кнопки */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0);  /* Полупрозрачный фон для кнопок */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #2051FF;
+}
+
+.next {
+    right: 10px;  /* Расположение кнопки "вперед" */
+    position: absolute;  /* Позиционируем кнопки */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0);  /* Полупрозрачный фон для кнопок */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #2051FF;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.heart{
+    position: absolute;
+    margin-top: 51%;
+    margin-left: 2%;
+    padding: 5px;
+    width: 36px; /* Ширина кнопки */
+    height: 36px;
+    z-index: 1000;
+    display: inline-block;
+    border: none;
+    background-image: url('сердечко.svg');
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); /* Размытие заднего фона */
+    border-radius: 10px;
+    transition: 0.35s;
+    cursor: pointer;
+    
+}
+
+.heart:hover{
+     background-image: url('сердечко.синие.svg'); /* Фон при наведении */
+}
+
+.heart.active{
+    background-image: url('сердечко.синие.svg');
+}
+
+
+
+
+h6 {
+    margin-top: 40px; /* Увеличьте или уменьшите по необходимости */
+    margin-left: 8%;
+    font-size: 93px;
+    color: #2051ff;
+    font-family: GeologicaCursive-Regular;
+    letter-spacing: -5px;
+}
+
+.num_cont{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 1%;
+    justify-content:flex-end;
+    gap: 10px;     /* Перенос элементов, если они не помещаются в одну строку */   
+    flex-wrap: wrap; 
+}
+.num{
+    background-color: white;
+    border: 0;
+    width: 5px;
+    height: 5px;
+    font-family: GeologicaCursive-Regular;
+    font-size: 22px;
+    color: #2051FF;
+    font-weight: 900;
+    
+}
+
+.podval{
+    display: flex;
+    position: relative;
+    height: 400px;
+    width: auto;
+    background-color: #2051FF;
+}
+
+h7{
+    font-size: 93px;
+    font-size: 93px;
+    color:  #2051ff;
+    font-family: GeologicaCursive-Black;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -4px;
+
+}
+
+.modal{
+    display:  none;
+    justify-content: center;
+    position: fixed;
+    margin-top: 10%;
+    margin-left: 35%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    z-index: 5000;   
+    width: 504px;
+    height: 300px;
+}
+.modal_content{
+    padding: 10px;
+    width: 30%;
+}
+.close{
+    font-family: GeologicaCursive-Regular;
+    font-size: 30px;
+    color:#2051FF ;
+    margin-left: 10%;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    white-space: 1px;
+    font-family: GeologicaCursive-Regular;
+    color: #2051FF;
+    font-size: 17px;
+    letter-spacing: -0.7px;
+
+}
+
+.name-container,.text-container {
+    text-align: left; /* Выровнять текст по левому краю */
+}
+.email-container{
+    text-align: left;
+}
+
+.name-email-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+
+p{
+margin-top: 6px;
+margin-bottom: 6px;
+}
+
+.rect {
+    width: 220px; /* Ширина прямоугольника */
+    height: 23px; /* Высота прямоугольника */
+    border: 2px solid #2051FF; /* Синий бордер */
+    background-color: transparent; /* Прозрачный фон */
+    border-radius: 6px;
+}
+.rect1 {
+    width: 472px; /* Ширина прямоугольника */
+    height: 100px; /* Высота прямоугольника */
+    border: 2px solid #2051FF; /* Синий бордер */
+    background-color: transparent; /* Прозрачный фон */
+    border-radius: 10px;
+}
+
+
+
+.send-btn{
+    margin-top: 10px;
+    margin-left: 0px;
+    background-color: #2051FF;
+    border: 0;
+    color:aliceblue;
+    width: 140px;
+    font-size: 14px;
+    padding: 6px;
+    font-family: GeologicaCursive-Regular;
+    border-radius: 100px;
+    letter-spacing: -0.7px;
+}
+
+.overlay {
+    display: none; /* Скрываем затемняющий фон по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    z-index: 3000; /* Слой ниже модального окна */
+}
+
+
+
+
+
+
+.message1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 24%;
+    margin-top: 6%;
+    white-space: 1px;
+    font-family: GeologicaCursive-Regular;
+    color: #ffffff;
+    font-size: 17px;
+    letter-spacing: -0.7px;
+
+}
+
+.rect0 {
+    width: 220px; /* Ширина прямоугольника */
+    height: 23px; /* Высота прямоугольника */
+    border: 2px solid #ffffff; /* Синий бордер */
+    background-color: transparent; /* Прозрачный фон */
+    border-radius: 6px;
+}
+
+.rect1_1 {
+    width: 472px; /* Ширина прямоугольника */
+    height: 100px; /* Высота прямоугольника */
+    border: 2px solid #ffffff; /* Синий бордер */
+    background-color: transparent; /* Прозрачный фон */
+    border-radius: 10px;
+}
+
+
+
+.send-btn1{
+    margin-top: 10px;
+    margin-left: 0px;
+    background-color: #ffffff;
+    border: 0;
+    color: #2051FF;
+    width: 140px;
+    font-size: 14px;
+    padding: 6px;
+    font-family: GeologicaCursive-Regular;
+    border-radius: 100px;
+    letter-spacing: -0.7px;
+}
+
+
+.social_networks{
+    display: flex;
+    flex-direction: row;  
+    gap: 10px;
+    margin-top: 5%;
+}
+.string{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.social_networks_text{
+    display: flex;
+    flex-direction: column;  
+    font-size: 14px; /* Размер шрифта 16px для жирного текста */
+    font-family: GeologicaCursive-Regular;
+    color:  #ffffff;
+}
+
+.social_networks_text1{
+    display: flex;
+    flex-direction: column;  
+    margin-left: 5%;
+    font-size: 14px; /* Размер шрифта 16px для жирного текста */
+    font-family: GeologicaCursive-Regular;
+    color:  #ffffff;
+}
+
+.podval_text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+}
+
+
+
+.shkala{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 4% ;
+}
+
+.shkala_text_text{
+    display: flex;   
+    flex-direction: row;
+}
+
+.shkala_svg{
+    margin-left: -8%;
+}
+
+.about_me{
+    display: flex;   
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 70%;
+    overflow-wrap: break-word; 
+    gap: 7%;
+    margin-left: 9%;
+}
+
+
+
+.about_me_3{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.topic{
+    color:  #2051ff;
+    font-size: 30px;
+    font-family: GeologicaCursive-Regular;
+    letter-spacing: -0.7px;
+
+}
+
+.shkala2_text{
+    display: flex;
+    flex-direction: row;
+}
+.shkala_svg2{
+    margin-top: 2%;
+}
+.hobby{
+    margin-left: -10%;
+}
