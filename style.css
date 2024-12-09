@@ -15,6 +15,12 @@ body{
     src: url("./fonts/GeologicaCursive-Black.woff2") format("woff2")
 }
 
+:root{ --header-height: 40px}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
 
 .header_elements{
     display: flex;
@@ -32,10 +38,14 @@ body{
     margin-top: 0%;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px); /* Размытие заднего фона */
-    box-shadow: 0px 0px 15px rgba(164, 164, 165, 0.4);
-    
+    box-shadow: 0px 0px 15px rgba(164, 164, 165, 0.4);   
 }
-.span_elements span{
+
+.header__link{
+    text-decoration: none; 
+}
+
+.span_elements a{
     color:  #2051ff;
     font-size: 18px;
     font-family: GeologicaCursive-Regular;
@@ -410,6 +420,7 @@ letter-spacing: -0.7px;
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
+    min-width: 0;
 }
 
 .text_info{
@@ -524,52 +535,25 @@ letter-spacing: -0.7px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.slider-container {
+.swiper-container {
     display: flex;
     max-width: 66%;  /* Максимальная ширина для слайдера */
     margin-top: 1%;
     margin-left: 5%;
-     /*margin : auto;  /* Центрируем слайдер */
     position: relative;  /* Для позиционирования кнопок */
     overflow: hidden;  /* Скрывает изображения, выходящие за пределы контейнера */
-
 }
 
-.slider {
+.swiper-wrapper {
     display: flex;
     transition: transform 0.5s ease;  /* Плавный переход между изображениями */
 }
 
-.slide {
+.swiper-slide {
     min-width: 100%;  /* Каждое изображение занимает 100% ширины контейнера */
 }
 
-
-.slide-image {
+.swiper-slide img {
     width: 100%;  /* Изображение растягивается на всю ширину слайда */
     height: auto;  /* Автоматическая высота для сохранения пропорций */
 }
@@ -577,46 +561,7 @@ letter-spacing: -0.7px;
 
 
 
-
-
-.prev {
-    left: 10px;  /* Расположение кнопки "назад" */
-    position: absolute;  /* Позиционируем кнопки */
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0);  /* Полупрозрачный фон для кнопок */
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 25px;
-    color: #2051FF;
-}
-
-.next {
-    right: 10px;  /* Расположение кнопки "вперед" */
-    position: absolute;  /* Позиционируем кнопки */
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0);  /* Полупрозрачный фон для кнопок */
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 25px;
-    color: #2051FF;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-.heart{
+.heart {
     position: absolute;
     margin-top: 51%;
     margin-left: 2%;
@@ -635,17 +580,12 @@ letter-spacing: -0.7px;
     border-radius: 10px;
     transition: 0.35s;
     cursor: pointer;
-    
 }
 
-.heart:hover{
-     background-image: url('сердечко.синие.svg'); /* Фон при наведении */
+.heart.active {
+   background-image: url('сердечко.синие.svg'); /* Изображение при активации */
+   width: 40px; /* Размер при активации */
 }
-
-.heart.active{
-    background-image: url('сердечко.синие.svg');
-}
-
 
 
 
@@ -699,6 +639,73 @@ h7{
 
 }
 
+.price_list{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-left: 30%;
+    margin-bottom: 13%;
+
+}
+.price_list_card{
+    display: flex;
+    position: absolute;
+    gap: 2%;
+}
+
+.card1{
+    transform: rotate(-15deg);
+    margin-bottom: 40%;  
+    margin-left: 19%;  
+}
+.card2{
+    transform: rotate(13deg);
+    margin-bottom: 24%;
+}
+
+.card3{
+    margin-bottom: 10%;
+    margin-left: -24%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    
+}
+.card4{
+    transform: rotate(16deg);
+    margin-bottom: 35%;
+    margin-left: -3%;
+}
+
+
+.vopros_cont{
+    margin-top: 28%;
+    margin-bottom: 10%;
+    flex-direction: column;
+}
+
+.vopros{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: GeologicaCursive-Regular;
+    color:  #2051ff;
+    text-decoration: underline;
+    letter-spacing: -0.7px;
+    margin-left: 9%;
+
+}
+.vopros_btn1{
+    font-family: GeologicaCursive-Regular;
+    color:  #2051ff;
+    border: 0;
+    background-color: #ffffff;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -0.7px;
+    margin-left: 9%;
+}
+
+
 .modal{
     display:  none;
     justify-content: center;
@@ -743,11 +750,10 @@ h7{
     text-align: left;
 }
 
-.name-email-container{
+.name_mail_contaner{
     display: flex;
     flex-direction: row;
     gap: 30px;
-
 }
 
 
@@ -799,10 +805,6 @@ margin-bottom: 6px;
 }
 
 
-
-
-
-
 .message1 {
     display: flex;
     flex-direction: column;
@@ -830,9 +832,27 @@ margin-bottom: 6px;
     height: 100px; /* Высота прямоугольника */
     border: 2px solid #ffffff; /* Синий бордер */
     background-color: transparent; /* Прозрачный фон */
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
+.input{
+    width: 220px; /* Ширина прямоугольника */
+    height: 30px; /* Высота прямоугольника */
+    border: 2px solid #ffffff; /* Синий бордер */
+    background-color: transparent; /* Прозрачный фон */
+    border-radius: 5px;
+    resize: none;
+}
+
+.input1{
+    width: 472px; /* Ширина прямоугольника */
+    height: 100px; /* Высота прямоугольника */
+    border: 2px solid #ffffff; /* Синий бордер */
+    background-color: transparent; /* Прозрачный фон */
+    border-radius: 10px;    
+    resize: none;
+
+}
 
 
 .send-btn1{
@@ -939,3 +959,108 @@ margin-bottom: 6px;
 .hobby{
     margin-left: -10%;
 }
+.footer_text_left_side{
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+
+
+
+.scrolling-image-container {
+    overflow: hidden;
+    height: 294px;
+    width: 294px;
+  }
+
+  .scrolling-image {
+    background: url('бесконечный\ слайдер1.jpg') repeat-x;
+    height: 750px;
+    width: 7680px;
+    animation: slide 27s linear infinite;
+  }
+
+  .scrolling-image2 {
+    background: url('бесконечный\ слайдер2.jpg') repeat-y;
+    height: 7680px;
+    width: 750px;
+    animation: slide_vertical 27s linear infinite;
+  }
+
+  .scrolling-image3 {
+    background: url('бесконечный\ слайдер3.jpg') repeat-y;
+    height: 7680px;
+    width: 750px;
+    animation: slide_vertical 27s linear infinite;
+  }
+  
+  .scrolling-image4 {
+    background: url('бесконечный\ слайдер4.jpg') repeat-x;
+    height: 750px;
+    width: 7680px;
+    animation: slide 27s linear infinite;
+  }
+
+  @keyframes slide_vertical {
+    0% {
+      transform: translate(0,0);
+    }
+    100% {
+      transform: translate(0, -3840px); /* The image width */
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-3840px); /* The image width */
+    }
+  }
+  
+  .flower {
+    position: relative;
+    transition: transform 0.7s ease-out; /* Плавный переход */
+}
+
+.flower:hover {
+    transform: translate(0px, -70px); /* Сдвиг по осям X и Y */
+}
+
+
+
+
+
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+  }
+  
+  .book-object {
+    display: block;
+    width: 100%; /* Изображение растянется на всю ширину контейнера */
+    height: 100%; /* Высота изображения будет равна высоте контейнера */
+    object-fit: cover; /* Масштабирование изображения */
+    cursor: pointer; /* Изменение курсора для нажатия */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .flying-object {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+

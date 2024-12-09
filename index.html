@@ -4,53 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <script src="jquery-3.7.1.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
 </head>
 
 <body>
     <header class="header">
     <div class="header_elements">
-    <div class="span_elements">
-        <span>
-            О себе
-        </span>
+    <div class="span_elements">      
+        <a href="#main1" class="header__link"> О себе</a>
     </div>
     <div class="span_elements">
-        <span>
-            Работы
-        </span>
+        <a href="#main2" class="header__link"> Работы</a>
     </div>
     <div class="span_elements">
-        <span>
-            Price list
-        </span>
+        <a href="#main3" class="header__link"> Price list </a>
     </div>
     <div class="span_elements">
-        <span>
-            Контакты
-        </span>
+        <a href="#main4" class="header__link"> Контакты </a>
     </div>
     </div> 
 
 </header>
-<button class="image-button0" onclick="alert('Кнопка нажата!')">   
-</button>
 
-<h1>demina J</h1>
+
+<button class="image-button0"> </button>
+
+
+<h1 id="main0">demina J</h1>
 
 <div class="flex-container11">
  
        <img src="фотография с морем.jpg" height="380">
 
-
      <div class="flex-container12">    
         <div class="flex-container13">
             <button class="btn" id="myTitle">
-                напишите
+             напишите
             </button>
     
         <div class="text_info0">
@@ -67,14 +60,14 @@
 
 <div class="flex-container1">
  <div class="image-row">
-    <img src="цветок 1.svg" alt="Картинка 1">
-    <img src="цветок 2.svg" alt="Картинка 2">
-    <img src="цветок 3.svg" alt="Картинка 3">
-    <img src="цветок 4.svg" alt="Картинка 4">
+    <img class="flower" src="цветок 1.svg" alt="Картинка 1">
+    <img class="flower" src="цветок 2.svg" alt="Картинка 2">
+    <img class="flower" src="цветок 3.svg" alt="Картинка 3">
+    <img class="flower" src="цветок 4.svg" alt="Картинка 4">
  </div>
 </div>
     
-<h4>о себе</h4>
+<h4 id="main1">о себе </h4> 
 
 
 <div class="about_me">
@@ -170,23 +163,33 @@
 
 
 
-<h4>работы </h4>
+<h4 id="main2">работы </h4>
 
 <div class="flex-container4">
     <div class="kvadrat1">
-        <img src="квадрат 1.svg" width="294" height="294"  class="k1" alt="Картинка 1">
-        <button class="image-button" onclick="alert('Кнопка нажата!')"></button>
+        <div class="scrolling-image-container">
+            <div class="scrolling-image"></div>
+           </div>
+      
+        <a href="#main5">
+        <button class="image-button" ></button>
+        </a>
+
         <div id="myTitle" class="tx1">печать</div> 
     </div>
     <div>
         <img src="квадрат 2.svg" width="294" height="294" class="i2" alt="Картинка 2">
     </div>
     <div class="kvadrat2">
-        <img src="квадрат 3.svg" width="294" height="294" class="k2" alt="Картинка 3">
-        <button class="image-button" onclick="alert('Кнопка нажата!')"></button>
-        <div class="tx1">
-            брендинг
-        </div>
+        <div class="scrolling-image-container">
+            <div class="scrolling-image2"></div>
+           </div>
+        <a href="#main6">
+        <button class="image-button" ></button>
+        </a>
+
+        <div class="tx1"> брендинг</div>
+
     </div>
     <div>
         <img src="квадрат 4.svg" width="294" height="294" class="i3" alt="Картинка 4">
@@ -198,21 +201,31 @@
         <img src="квадрат 3.svg" width="294" height="294" class="i2" alt="Картинка 2">
     </div>
     <div class="kvadrat1">
-        <img src="квадрат 4.svg" width="294" height="294" class="k1" alt="Картинка 1">
-        <button id="myButton" class="image-button" onclick="alert('Кнопка нажата!')"></button>
-        <div class="tx1">печать</div>
+        <div class="scrolling-image-container">
+            <div class="scrolling-image3"></div>
+           </div>
+        <a href="#main7">
+        <button class="image-button" ></button> 
+        </a>
+
+        <div class="tx1">плакат</div>
     </div>
     <div>
         <img src="квадрат 1.svg"width="294" height="294" class="i3" alt="Картинка 4">
     </div>
     <div class="kvadrat2">
-        <img src="квадрат 2.svg" width="294" height="294"class="k2" alt="Картинка 3">
-        <button class="image-button" onclick="alert('Кнопка нажата!')"></button>
-        <div class="tx1">брендинг</div>
+        <div class="scrolling-image-container">
+            <div class="scrolling-image4"></div>
+           </div>
+        <a href="#main8">
+        <button class="image-button"></button>
+        </a>
+
+        <div class="tx1">smm</div>
     </div>
 </div>
 
-<div class="info">
+<div id="main7" class="info">
     <div class="title">
         Серия плакатов No 1
     </div>
@@ -238,30 +251,24 @@
                     <b>photoshop</b>
                 </button></div>
             </div>
-            <div class="container_works">
 
-                <a href="плакат 1.1 big.jpg" class="lightzoom">
-                <img src='плакат1.1.jpg' alt="ok"></a>
-
-                <button class="heart">
-                </button>
+            <div class="swiper-container swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="плакат1.1.jpg" alt="карточка1"></div>
+                    <div class="swiper-slide"><img src="плакат 1.2.jpg" alt="карточка1"></div>
+                    <div class="swiper-slide"><img src="плакат 2.2.png" alt="карточка2"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <button id="MyHeart" class="heart"></button>
             </div>
+
         </div>
     </div>
 
 </div>
 
-<div class="num_cont">
-    <button class="num">
-        1 
-    </button>
-    <button class="num">
-        2
-    </button>
-    <button class="num">
-        3
-    </button>
-</div>
 
 
 <div class="info">
@@ -276,7 +283,7 @@
        <div class="block"> 
            <div class="text_info">
              <div class="text_info1">
-              <p>Серия типографических плакатов, 
+              <p> Серия типографических плакатов, 
                 которые были выполнены с помощью 
                 сканирования на принтере </p>
               </div>
@@ -288,10 +295,16 @@
                     <b>illustator</b>
                 </button></div>
             </div>
-            <div class="container_works">
-                <img src='все плакаты вместе 2.jpg' width="895" height="518" alt="ok">
-                <button class="heart">
-                </button>
+            <div class="swiper-container swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="все плакаты вместе 2.jpg" alt="карточка1"></div>
+                    <div class="swiper-slide"><img src="плакат 2.3.jpg" alt="карточка1"></div>
+                    <div class="swiper-slide"><img src="плакат 2.2.png" alt="карточка2"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <button id="MyHeart" class="heart"></button>            
             </div>
         </div>
     </div>
@@ -320,17 +333,22 @@
                     <b>illustrator</b>
                 </button></div>
             </div>
-            <div class="container_works">
-                <img src='Group 101.jpg' width="895" height="518" alt="ok">
-                <button class="heart">
-                </button>
+            <div class="swiper-container swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="плакат 3.1.png" alt="карточка1"></div>
+                    <div class="swiper-slide"><img src="плакат 3.2.png" alt="карточка2"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <button id="MyHeart" class="heart"></button>            
             </div>
         </div>
     </div>
 </div>
 
 <div class="info">
-    <div class="title">
+    <div id="main6" class="title">
         Брендинг
     </div>
     <div class="in1">
@@ -359,17 +377,22 @@
                 </button></div>
                 
             </div>
-            <div class="container_works">
-                <img src='линия коробок (начало)3 мини(2).jpg' width="895" height="518" alt="ok">
-                <button class="heart">
-                </button>
-            </div>
+            <div class="swiper-container swiper-container3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="линия коробок (начало)3 мини(2).jpg" alt="карточка1"></div>
+                    <div class="swiper-slide"><img src="косметика2.png" alt="карточка2"></div>
+                    <div class="swiper-slide"><img src="косметика3.png" alt="карточка3"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <button id="MyHeart" class="heart"></button>            </div>
         </div>
     </div>
 </div>
 
 <div class="info">
-    <div class="title">
+    <div id="main8" class="title">
         SMM
     </div>
     <div class="in1">
@@ -393,29 +416,25 @@
                     <b>figma</b>
                 </button></div>
             </div>
-            <div class="slider-container">
-                <div class="slider">
-                    <div class="slide">
-                        <img class="slide-image" src='смм1.jpg' alt="Картинка 1">
-                    </div>
-                    <div class="slide">
-                        <img class="slide-image" src='смм2.jpg' alt="Картинка 2">
-                    </div>
-                    <div class="slide">
-                        <img class="slide-image" src='смм3.jpg' alt="Картинка 3">
-                    </div>
-                </div>
-                <button class="prev" onclick="changeSlide(-1, 'slider-container')">&#10094;</button>
-                <button class="next" onclick="changeSlide(1, 'slider-container')">&#10095;</button>
                 
-                <button class="heart" id="MyHeart" ></button>
+  <div class="swiper-container swiper-container2">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="смм1.png" alt="карточка1"></div>
+        <div class="swiper-slide"><img src="смм2.jpg" alt="карточка2"></div>
+        <div class="swiper-slide"><img src="смм3.jpg" alt="карточка3"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <button id="MyHeart" class="heart"></button>
+</div>
+        </div>  
             </div>
         </div>
-    </div>
-</div>
+  
 
 <div class="info">
-    <div class="title">
+    <div id="main5" class="title">
         Печать книги 
     </div>
     <div class="in1">
@@ -440,25 +459,19 @@
                     <b>Indisign</b>
                 </button></div>
             </div>
-                <div class="slider-container">
-                    <div class="slider">
-                        <div class="slide">
-                            <img class="slide-image" src='Frame 48.jpg' alt="Картинка 1">
-                        </div>
-                        <div class="slide">
-                            <img class="slide-image" src='книга2.jpg' alt="Картинка 2">
-                        </div>
-                        <div class="slide">
-                            <img class="slide-image" src='книга3.3.gif' alt="Картинка 3">
-                        </div>
-                    </div>
-                    <button class="prev" onclick="changeSlide(-1, 'slider-container2')">&#10094;</button>
-                    <button class="next" onclick="changeSlide(1, 'slider-container2')">&#10095;</button>
-                    
-                    <button class="heart" id="MyHeart" ></button>
+            <div class="swiper-container swiper-container1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="Frame 48.jpg" alt="карточка1"></div>
+                    <div class="swiper-slide"><img src="книга2.jpg" alt="карточка2"></div>
+                    <div class="swiper-slide"><img src="книга3.3.gif" alt="карточка3"></div>
                 </div>
-                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <button class="heart" id="MyHeart" ></button>
 
+            </div>
+            <button id="MyHeart" class="heart"></button>
 
         </div>
     </div>
@@ -470,27 +483,53 @@
 
 
 
+<h4 id="main3"> price list</h4>
 
+<div class="last_contaner main-object">
 
+<div class="price_list">
+ <div class="price_list_card">
+    <div class="container_pr">
+        <div class="book-object"><img src="папочка.svg" alt="карточка1"></div>
+        <div class="flying-object"><img src="карточка1.svg" alt="карточка1"></div>
+        <div class="flying-object"><img src="карточка2.svg" alt="карточка1"></div>
+        <div class="flying-object"><img src="карточка3.svg" alt="карточка1"></div>
+        <div class="flying-object"><img src="карточка3-1.svg" alt="карточка1"></div>
 
+      </div>
+  </div>
+</div>
 
+<div class="vopros_cont"> 
+<div class="vopros">
+    Часто задаваемые вопросы
+</div>
+<button class="vopros_btn1">
+    Как заказать дизайн? 
+</button>
+<button class="vopros_btn1">
+    Сколько времени будет выполняться работа?
+</button>
+<button class="vopros_btn1">
+    С кем я работаю? 
+</button>
+</div>
 
-<h4> price list</h4>
-
+</div>
 
 <div class="flex-container1">
     <div class="image-row">
-       <img src="цветок 1.svg" alt="Картинка 1">
-       <img src="цветок 2.svg" alt="Картинка 2">
-       <img src="цветок 3.svg" alt="Картинка 3">
-       <img src="цветок 4.svg" alt="Картинка 4">
+        <img class="flower" src="цветок 1.svg" alt="Картинка 1">
+        <img class="flower" src="цветок 2.svg" alt="Картинка 2">
+        <img class="flower" src="цветок 3.svg" alt="Картинка 3">
+        <img class="flower" src="цветок 4.svg" alt="Картинка 4">
     </div>
    </div>
 
 <div class="podval">
 
     <div class="podval_text">
-    <h7>контакты</h7>  
+    <h7 id="main4">контакты</h7>  
     
     <div class="social_networks"> 
     <div class="string">
@@ -506,7 +545,8 @@
     <div class="social_networks_text1">
         <p>deathofunicorns</p>
         <p>Djul</p>
-        <p>yulya.demina.01@gmail.com</p></div>
+        <a class="footer_text_left_side" href="mailto:yulya.demina.01@gmail.com">yulya.demina.01@gmail.com</a>
+    </div>
     </div>
  </div>
    
@@ -544,38 +584,51 @@
     <div class="modal_content"> 
         <div id="myClose" class="close">&times;</div>
         <div class="message">
-         <div class="name-email-container">
-            <div class="name-container">
-                <p>имя фамилия</p>
-                <div class="rect"></div>
-            </div>
-            <div class="email-container">
-                <p>почта</p>
-                <div class="rect"></div>
-            </div>
+        
+        <div class="name_mail_contaner" >
+            <label class="username">
+                <p class="form">имя фамилия </p>
+                <input type="text" class="input">
+            </label>
+            <label class="e_mail">
+                <p class="form">почта </p>
+                <input type="email" id="email" pattern=".+@example\.com" size="30" required class="input"/>
+            </label>
         </div>
 
-        <div class="text-container">
-            <p>текст обращения</p>
-            <div class="rect1"></div>
-        </div>
+            <div class="message_box"></div>
+                <p class="name2_form">сообщение </p>
+                <textarea name="message" class="input1"></textarea>
+            </div>
+        
 
-        <div class="send-container">
-            <button class="send-btn" id="myTitle">
-                отправить
-            </button> </div>
+                <input type="submit" value="Отправить" class="send-btn1">
+      
+
+          
         </div>
  </div>
 </div>
 
+<input type="text">
+
+
+<label for="email">Enter your example.com email:</label>
+
+<input type="email" id="email" pattern=".+@example\.com" size="30" required />
 
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="myskript.js"></script>
-
+<script src="pice-list.js"></script>
 <link rel="stylesheet" href="lightzoom/style.css" type="text/css">
 <script type="text/javascript" src="lightzoom/lightzoom.js"></script>
 <script type="text/javascript">jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true});</script>
 
+
 </body>
 </html>
+
+
